@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AssetHandler", "AssetHandler\AssetHandler.vcxproj", "{011D5DC7-5962-453B-8E51-92675BE241ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{011D5DC7-5962-453B-8E51-92675BE241ED}.Debug|x64.ActiveCfg = Debug|x64
+		{011D5DC7-5962-453B-8E51-92675BE241ED}.Debug|x64.Build.0 = Debug|x64
+		{011D5DC7-5962-453B-8E51-92675BE241ED}.Debug|x86.ActiveCfg = Debug|Win32
+		{011D5DC7-5962-453B-8E51-92675BE241ED}.Debug|x86.Build.0 = Debug|Win32
+		{011D5DC7-5962-453B-8E51-92675BE241ED}.Release|x64.ActiveCfg = Release|x64
+		{011D5DC7-5962-453B-8E51-92675BE241ED}.Release|x64.Build.0 = Release|x64
+		{011D5DC7-5962-453B-8E51-92675BE241ED}.Release|x86.ActiveCfg = Release|Win32
+		{011D5DC7-5962-453B-8E51-92675BE241ED}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8AD317F0-85FA-4D11-8B58-6A194643AA9A}
+	EndGlobalSection
+EndGlobal
