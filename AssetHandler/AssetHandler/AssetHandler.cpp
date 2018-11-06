@@ -1,5 +1,7 @@
 #include "AssetHandler.h"
 
+AssetHandler * AssetHandler::m_instance = 0;
+
 void AssetHandler::addTexture(string tag, string filepath, SDL_Renderer * renderer)
 {
 	if (!IMG_Load(filepath.c_str()))

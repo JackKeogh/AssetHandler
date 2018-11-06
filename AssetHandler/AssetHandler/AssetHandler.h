@@ -31,7 +31,7 @@ public:
 	/// if it doesn't. 
 	/// </summary>
 	/// <returns>A ptr to the instance of the asset handler.</returns>
-	AssetHandler * getInstance()
+	static AssetHandler * getInstance()
 	{
 		if (!m_instance)
 		{
