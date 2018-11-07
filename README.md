@@ -58,4 +58,9 @@ assets->getTexture("image");</br></br>
 assets->getTexture("sound");</br></br>
 assets->getTexture("font");
 
+### Clear Asset Handler
+So you've loaded in your assets, but now want to unload them and clear the texture, sound and font 
+storages. Luckily, there's a function for just that. It clears each storage of what has been loaded in. 
+Example:</br></br>
+assets->Clear();
 
