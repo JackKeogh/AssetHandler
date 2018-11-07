@@ -27,3 +27,17 @@ To get an instance of the AssetHandler you need to call its static function "get
 function checks if an instance of the asset handler exists and if not it creates one. It then returns
 the instance of the asset handler as a pointer. Example: </br></br>
 AssetHandler * assets = AssetHandler::getInstance();
+
+### Add a Texture.
+The function that adds a texture to the asset handler, loads the texture itself. It requires three
+parameters for it to work, two string values and one SDL_Renderer pointer value. The first string 
+value works as tag, so that it can be referenced later by the getter function. The second string
+value is the file path for the image you want to load in. The SDL_Renderer pointer parameter is
+required to use the SDL function to load a texture. Example: </br></br>
+assets->addTexture("image", "Assets/image.png", renderer);
+
+
+
+
+
+
