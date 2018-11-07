@@ -1,5 +1,8 @@
 # AssetHandler
 
+This library to assist in the loading of textures, sounds and fonts. It's intended purpose is to reduce
+memory leaks that would be caused through the loading of multiple textures, sounds and fonts.
+
 ## Installation
 So you want to use this library in your SDL2-2.0.7 project? Well both release and debug libraries
 are already built and up to date with the current solution.</br>
@@ -12,3 +15,6 @@ release.
 AssetHandler debug folder, into the folder.
 6. Navigate back and into the release folder. Repeat the same process as step 5 but use the dll and lib
 files from the release folder.
+7. Finally, link to these library files in your project.
+
+## How it works
