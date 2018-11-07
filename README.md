@@ -43,6 +43,13 @@ later by its getter function. The second string value works as the file path to 
 Example:</br></br>
 assets->addSound("sound", "Assets/sound.wav");
 
+### Add a Font
+Following the pattern from the last two adding functions, this function loads the font file in order
+to store it. The function requires three parameters, two string values and an integer value. The two
+string values are as before, a tag and the file path. The integer value, is for the desired size of the
+font. Example:</br></br>
+assets->addFont("font", "Assets/font.ttf", 32);
+
 
 
 
