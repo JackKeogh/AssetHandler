@@ -50,6 +50,12 @@ string values are as before, a tag and the file path. The integer value, is for 
 font. Example:</br></br>
 assets->addFont("font", "Assets/font.ttf", 32);
 
-
+### Getter functions
+I have put all getter functions under this one heading as the three functions, while they return 
+different values, take the same single string value. The string value works as the key for the
+item you want to return, this value should be the same as one of the tags added. Examples:</br></br>
+assets->getTexture("image");</br></br>
+assets->getTexture("sound");</br></br>
+assets->getTexture("font");
 
 
