@@ -23,3 +23,7 @@ created. In the below paragraphs I will outline how to retreive the instance of 
 textures, sounds and fonts, get textures, sounds and fonts, and clear what is stored.
 
 ### Get an Instance
+To get an instance of the AssetHandler you need to call its static function "getInstance()". The
+function checks if an instance of the asset handler exists and if not it creates one. It then returns
+the instance of the asset handler as a pointer. Example: </br></br>
+AssetHandler * assets = AssetHandler::getInstance();
