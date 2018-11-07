@@ -18,3 +18,8 @@ files from the release folder.
 7. Finally, link to these library files in your project.
 
 ## How it works
+The asset handler library follows the singleton pattern. Only one instance of this object can be
+created. In the below paragraphs I will outline how to retreive the instance of the object, add
+textures, sounds and fonts, get textures, sounds and fonts, and clear what is stored.
+
+### Get an Instance
