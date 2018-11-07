@@ -8,3 +8,7 @@ are already built and up to date with the current solution.</br>
 3. Navigate into the include folder and place the AssetHandler.h file into it.
 4. Navigate out and into the lib folder, create two more folders. Label one debug and the other
 release.
+5. Navigate into the debug folder and place the AssetHandler.dll and AssetHandler.lib files, from the 
+AssetHandler debug folder, into the folder.
+6. Navigate back and into the release folder. Repeat the same process as step 5 but use the dll and lib
+files from the release folder.
