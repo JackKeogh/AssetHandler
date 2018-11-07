@@ -28,7 +28,7 @@ function checks if an instance of the asset handler exists and if not it creates
 the instance of the asset handler as a pointer. Example: </br></br>
 AssetHandler * assets = AssetHandler::getInstance();
 
-### Add a Texture.
+### Add a Texture
 The function that adds a texture to the asset handler, loads the texture itself. It requires three
 parameters for it to work, two string values and one SDL_Renderer pointer value. The first string 
 value works as tag, so that it can be referenced later by the getter function. The second string
@@ -36,7 +36,12 @@ value is the file path for the image you want to load in. The SDL_Renderer point
 required to use the SDL function to load a texture. Example: </br></br>
 assets->addTexture("image", "Assets/image.png", renderer);
 
-
+### Add a Sound
+Like the texture function, this function loads the sound file as well as stores it. It requires two
+string parameters. The first string value again works as a tag so that the sound can be referenced
+later by its getter function. The second string value works as the file path to load the sound from.
+Example:</br></br>
+assets->addSound("sound", "Assets/sound.wav");
 
 
 
