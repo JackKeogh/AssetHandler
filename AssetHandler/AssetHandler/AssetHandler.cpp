@@ -6,7 +6,7 @@ void AssetHandler::addTexture(string tag, string filepath, SDL_Renderer * render
 {
 	if (!IMG_Load(filepath.c_str()))
 	{
-		cout << IMG_GetError << endl;
+		cout << IMG_GetError << " Failed to load texture." << endl;
 	}
 	else
 	{
@@ -24,11 +24,12 @@ void AssetHandler::addSound(string tag, string filepath)
 {
 	if (!Mix_LoadWAV(filepath.c_str()))
 	{
-		cout << Mix_GetError << endl;
+		cout << Mix_GetError << " Failed to load sound." << endl;
 	}
 	else
 	{
 		m_sounds[tag] = Mix_LoadWAV(filepath.c_str());
+		cout << "Sound : " << tag << " loaded successfully" << endl;
 	}
 }
 
@@ -41,12 +42,18 @@ void AssetHandler::addFont(string tag, string filepath, int size)
 {
 	if (!TTF_OpenFont(filepath.c_str(), size))
 	{
-		cout << TTF_GetError << endl;
+		cout << TTF_GetError << " Failed to load font." << endl;
 	}
 	else
 	{
 		m_fonts[tag] = TTF_OpenFont(filepath.c_str(), size);
+		cout << "Font : " << tag << " loaded successfully" << endl;
 	}
+}
+
+TTF_Font * AssetHandler::getFont(string tag)
+{
+	return m_fonts[tag];
 }
 
 void AssetHandler::ClearTextures()
