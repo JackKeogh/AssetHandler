@@ -58,16 +58,37 @@ TTF_Font * AssetHandler::getFont(string tag)
 
 void AssetHandler::ClearTextures()
 {
+	map<string, SDL_Texture*>::iterator iter;
+
+	for (iter = m_textures.begin(); iter != m_textures.end(); iter++)
+	{
+		SDL_DestroyTexture(iter->second);
+	}
+
 	m_textures.clear();
 }
 
 void AssetHandler::ClearSounds()
 {
+	map<string, Mix_Chunk*>::iterator iter;
+
+	for (iter = m_sounds.begin(); iter != m_sounds.end(); iter++)
+	{
+		Mix_FreeChunk(iter->second);
+	}
+
 	m_sounds.clear();
 }
 
 void AssetHandler::ClearFonts()
 {
+	map<string, TTF_Font*>::iterator iter;
+
+	for (iter = m_fonts.begin(); iter != m_fonts.end(); iter++)
+	{
+		TTF_CloseFont(iter->second);
+	}
+
 	m_fonts.clear();
 }
 

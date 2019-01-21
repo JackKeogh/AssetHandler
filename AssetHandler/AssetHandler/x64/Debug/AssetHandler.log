@@ -1,4 +1,2 @@
 ﻿  AssetHandler.cpp
   AssetHandler.vcxproj -> C:\Users\jack\OneDrive\Desktop\Work\Projects\Asset_Handler\AssetHandler\AssetHandler\x64\Debug\AssetHandler.lib
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(4259,5): warning MSB3026: Could not copy "x64\Debug\AssetHandler.pdb" to "C:\Users\jack\OneDrive\Desktop\Work\Projects\Asset_Handler\AssetHandler\AssetHandler\x64\Debug\AssetHandler.pdb". Beginning retry 1 in 1000ms. The requested operation cannot be performed on a file with a user-mapped section open.
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(4259,5): warning MSB3026:  
