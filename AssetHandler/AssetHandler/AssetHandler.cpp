@@ -38,6 +38,24 @@ Mix_Chunk * AssetHandler::getSound(string tag)
 	return m_sounds[tag];
 }
 
+void AssetHandler::addMusic(string tag, string filepath)
+{
+	if (!Mix_LoadMUS(filepath.c_str()))
+	{
+		cout << Mix_GetError << " Failed to load music." << endl;
+	}
+	else
+	{
+		m_tracks[tag] = Mix_LoadMUS(filepath.c_str());
+		cout << "Track : " << tag << " loaded successfully" << endl;
+	}
+}
+
+Mix_Music * AssetHandler::getMusic(string tag)
+{
+	return m_tracks[tag];
+}
+
 void AssetHandler::addFont(string tag, string filepath, int size)
 {
 	if (!TTF_OpenFont(filepath.c_str(), size))
@@ -80,6 +98,18 @@ void AssetHandler::ClearSounds()
 	m_sounds.clear();
 }
 
+void AssetHandler::ClearMusic()
+{
+	map<string, Mix_Music*>::iterator iter;
+
+	for (iter = m_tracks.begin(); iter != m_tracks.end(); iter++)
+	{
+		Mix_FreeMusic(iter->second);
+	}
+
+	m_tracks.clear();
+}
+
 void AssetHandler::ClearFonts()
 {
 	map<string, TTF_Font*>::iterator iter;
@@ -96,5 +126,6 @@ void AssetHandler::Clear()
 {
 	ClearTextures();
 	ClearSounds();
+	ClearMusic();
 	ClearFonts();
 }
