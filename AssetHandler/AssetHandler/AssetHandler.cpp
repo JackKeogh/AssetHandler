@@ -74,6 +74,16 @@ TTF_Font * AssetHandler::getFont(string tag)
 	return m_fonts[tag];
 }
 
+void AssetHandler::addFilePath(string tag, string filepath)
+{
+	m_filepaths[tag] = filepath;
+}
+
+string AssetHandler::getFilePath(string tag)
+{
+	return m_filepaths[tag];
+}
+
 void AssetHandler::ClearTextures()
 {
 	map<string, SDL_Texture*>::iterator iter;
@@ -120,6 +130,11 @@ void AssetHandler::ClearFonts()
 	}
 
 	m_fonts.clear();
+}
+
+void AssetHandler::ClearFilePaths()
+{
+	m_filepaths.clear();
 }
 
 void AssetHandler::Clear()
